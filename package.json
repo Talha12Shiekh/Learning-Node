@@ -1,0 +1,31 @@
+{
+  "name": "node-js-ultimate-course",
+  "version": "1.0.0",
+  "description": "Learning Node js from scaler acadmey",
+  "main": "main.js",
+  "type":"module",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Talha12Shiekh/Learning-Node.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "scaler",
+    "web",
+    "development",
+    "cool"
+  ],
+  "author": "Talha shiekh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Talha12Shiekh/Learning-Node/issues"
+  },
+  "homepage": "https://github.com/Talha12Shiekh/Learning-Node#readme",
+  "dependencies": {
+    "figlet": "^1.7.0"
+  }
+}

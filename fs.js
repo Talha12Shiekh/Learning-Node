@@ -1,4 +1,4 @@
-const {readFileSync,writeFileSync,appendFileSync,unlinkSync,mkdirSync,readdirSync,existsSync,rmdirSync,rmSync} = require("fs");
+// const {readFileSync,writeFileSync,appendFileSync,unlinkSync,mkdirSync,readdirSync,existsSync,rmdirSync,rmSync} = require("fs");
 // reading a file
 
 // const fileContent = readFileSync("./file1.txt",{encoding:"ascii"})
@@ -29,6 +29,6 @@ const {readFileSync,writeFileSync,appendFileSync,unlinkSync,mkdirSync,readdirSyn
 
 // let a = rmdirSync("HELLO WORLD"); // works with only empty directories
 
-rmSync("C:\\Users\\Hp\\Documents\\NODE JS ULTIMATE COURSE\\HELLO WORLD",{recursive:true}); // this command deletes all files and subdirectories in HELL
+// rmSync("C:\\Users\\Hp\\Documents\\NODE JS ULTIMATE COURSE\\HELLO WORLD",{recursive:true}); // this command deletes all files and subdirectories in HELL
 
 // console.log(a);
