@@ -4,6 +4,8 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json())
+
 const COURSES = [
     {id:1,name:"Javascript"},
     {id:2,name:"Python"},
@@ -14,6 +16,19 @@ const COURSES = [
 app.get("/",(req,res) => {
    res.send("Learning Node js from Scaler Acadmey");
 });
+
+app.get("/courses",(req,res) => {
+    res.send(COURSES)
+})
+
+app.post("/courses",(req,res) => {
+    let course = {
+        id:COURSES.length + 1,
+        name:req.body.name
+    }
+    COURSES.push(course);
+    res.send(COURSES);
+})
 
 app.get("/courses/:course",(req,res) => {
     let course = COURSES.find(c => c.name === req.params.course);
